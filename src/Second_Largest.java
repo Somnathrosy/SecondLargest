@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Second_Largest {
     public static void main(String[] args) {
         int arr [] = new int[]{1,8,9,99,10,8,1,2,3,4,60};
@@ -14,6 +16,7 @@ public class Second_Largest {
         for (int i=0;i<n;i++)
             if(arr[i]>Second_Largest && arr[i]!=largest)
                 Second_Largest=arr[i];
+        System.out.println("The Given Array is: "+ Arrays.toString(arr));
         System.out.println("The second Largest Element: "+Second_Largest);
     }
 }
